@@ -1,15 +1,12 @@
 :root {
-    --mint-cream: #F1F7ED;
-    --rose-quartz: #AF90A9;
-    --reseda-queen: #788475;
-    --china-rose: #A05C7B;
-    --cordovan: #944654;
-
     --moonstone: #0FA3B1;
     --moonstone-dark: #0D8A96; 
     --moonstone-muted: #0B7A86;
+
     --atomic-tangerine: #F7A072;
+    --atomic-tangerine-dark: #E0875A;
     --state-blue: #7D53DE;
+    --state-blue-dark: #5E3AC4;
 
 }
 
@@ -34,16 +31,28 @@ button {
     font-size: 16px;
 }
 
-.defeat {
+#defeat {
     background-color: var(--atomic-tangerine);
 }
 
-.victory {
+#defeat:hover {
+    background-color: var(--atomic-tangerine-dark);
+}
+
+#victory {
     background-color: var(--state-blue);
 }
 
-.draw {
+#victory:hover {
+    background-color: var(--state-blue-dark);
+}
+
+#draw {
     background-color: #7c7c7c;
+}
+
+#draw:hover {
+    background-color: #5b5b5b;
 }
 
 .button-choice {
