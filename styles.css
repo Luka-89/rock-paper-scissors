@@ -9,6 +9,7 @@
     --moonstone-dark: #0D8A96; 
     --moonstone-muted: #0B7A86;
     --atomic-tangerine: #F7A072;
+    --state-blue: #7D53DE;
 
 }
 
@@ -22,16 +23,31 @@ body {
     justify-content: flex-start;
     gap: 24px;
 }
-.button-choice {
+
+button {
     width: 128px;
     height: 36px;
     border-radius: 16px;
-    background-color: var(--moonstone);
     border: 0;
     transition: background-color 0.3s ease;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    font-weight: 100;
+}
+
+.defeat {
+    background-color: var(--atomic-tangerine);
+}
+
+.victory {
+    background-color: var(--state-blue);
+}
+
+.draw {
+    background-color: #7c7c7c;
+}
+
+.button-choice {
+    background-color: var(--moonstone);
 }
 
 .button-choice:hover {
