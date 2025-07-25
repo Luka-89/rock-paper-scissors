@@ -6,11 +6,13 @@
 
     --atomic-tangerine: #F7A072;
     --atomic-tangerine-dark: #E0875A;
+
     --state-blue: #7D53DE;
     --state-blue-dark: #5E3AC4;
 
     --mint-cream: #f5fffa;
-
+    --mint-cream-dark: #c2d8c9;
+    --mint-cream-darker: #8fb09a;
 }
 
 body {
@@ -58,11 +60,24 @@ body {
 }
 
 .button-choice:hover {
-    background-color: var(--moonstone-light);
+    background-color: var(--mint-cream-dark);
+}
+
+.button-choice:active {
+    transition: none;
+    background-color: var(--mint-cream-darker);
+}
+
+.button-choice.active {
+    background-color: var(--mint-cream-darker) !important;
+}
+
+.button-choice.passive {
+    background-color: var(--mint-cream) !important;
 }
 
 
-.robot {
+#robot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,4 +87,59 @@ body {
     background-color: var(--mint-cream);
     border: 0;
     border-radius: 16px;
+}
+
+#output-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.victory, .defeat, .draw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 128px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.victory {
+    background-color: var(--state-blue-dark);
+}
+
+.draw {
+    background-color: #696969;
+}
+
+.defeat {
+    background-color: var(--atomic-tangerine-dark);
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 128px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 0;
+    background-color: var(--mint-cream);
+    transition: background-color ease 0.3s;
+}
+
+.reset:hover {
+    background-color: var(--mint-cream-dark);
+}
+
+.reset:active {
+    transition: none;
+    background-color: var(--mint-cream-darker);
+}
+
+#output-div {
+    margin-top: 24px;
 }
