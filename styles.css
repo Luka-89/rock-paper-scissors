@@ -1,4 +1,5 @@
 :root {
+    --moonstone-light: #8FD8E0;
     --moonstone: #0FA3B1;
     --moonstone-dark: #0D8A96; 
     --moonstone-muted: #0B7A86;
@@ -8,6 +9,8 @@
     --state-blue: #7D53DE;
     --state-blue-dark: #5E3AC4;
 
+    --mint-cream: #f5fffa;
+
 }
 
 body {
@@ -15,59 +18,58 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.choices {
+#score-title {
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+#scoreboard {
+    text-align: center;
+    font-size: 36px;
+    margin: 16px;
+    padding: 0;
+}
+
+.game {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    gap: calc(75vw - 800px);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
-}
-
-button {
-    width: 128px;
-    height: 36px;
-    border-radius: 16px;
-    border: 0;
-    transition: background-color 0.3s ease;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-}
-
-#defeat {
-    background-color: var(--atomic-tangerine);
-}
-
-#defeat:hover {
-    background-color: var(--atomic-tangerine-dark);
-}
-
-#victory {
-    background-color: var(--state-blue);
-}
-
-#victory:hover {
-    background-color: var(--state-blue-dark);
-}
-
-#draw {
-    background-color: #7c7c7c;
-}
-
-#draw:hover {
-    background-color: #5b5b5b;
+    margin-left: 50px;
 }
 
 .button-choice {
-    background-color: var(--moonstone);
+    width: 200px;
+    height: 250px;
+    font-size: 128px;
+    background-color: var(--mint-cream);
+    border: 0;
+    border-radius: 16px;
+    transition: background-color ease 250ms;
 }
 
 .button-choice:hover {
-    background-color: var(--moonstone-dark);
+    background-color: var(--moonstone-light);
 }
 
-.button-choice:active {
-    background-color: var(--moonstone-muted);
-    transition: none;
-}
 
-p {
-    font-size: 24px;
+.robot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+    font-size: 128px;
+    background-color: var(--mint-cream);
+    border: 0;
+    border-radius: 16px;
 }
